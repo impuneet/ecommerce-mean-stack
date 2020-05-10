@@ -8,9 +8,9 @@ import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http
 })
 
 export class ApiService {
-  baseUri:string = 'http://localhost:4000/api';
-  productUri:string = 'http://localhost:4000/product';
-  orderUri:string = 'http://localhost:4000/order';
+  baseUri:string = 'https://blooming-stream-48367.herokuapp.com/api';
+  productUri:string = 'https://blooming-stream-48367.herokuapp.com/product';
+  orderUri:string = 'https://blooming-stream-48367.herokuapp.com/order';
   headers = new HttpHeaders().set('Content-Type', 'application/json');
 
   constructor(private http: HttpClient) { }

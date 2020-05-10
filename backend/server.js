@@ -18,10 +18,10 @@ mongoose.connect(dbConfig.db, {
 )
 
 // Setting up port with express js
-const employeeRoute = require('../backend/routes/employee.route');
-const orderRoute = require('../backend/routes/order.route');
-const productRoute = require('../backend/routes/product.route');
-const customerRoute = require('../backend/routes/customer.route');
+const employeeRoute = require('./routes/employee.route');
+const orderRoute = require('./routes/order.route');
+const productRoute = require('./routes/product.route');
+const customerRoute = require('./routes/customer.route');
 
 const app = express();
 app.use(bodyParser.json());

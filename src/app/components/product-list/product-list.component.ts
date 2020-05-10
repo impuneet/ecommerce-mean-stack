@@ -12,6 +12,9 @@ export class ProductListComponent implements OnInit {
     this.readEmployee();
   }
 
+  ngOnInit(){
+
+  }
   readEmployee() {
     this.apiService.getProducts().subscribe((data) => {
       this.Product = data;

@@ -9,7 +9,7 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { OrderListComponent } from './components/order-list/order-list.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'create-employee' },
+  { path: '', pathMatch: 'full', redirectTo: 'seller/order-list' },
   { path: 'create-employee', component: EmployeeCreateComponent },
   { path: 'edit-employee/:id', component: EmployeeEditComponent },
   { path: 'employees-list', component: EmployeeListComponent },
